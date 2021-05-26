@@ -1,5 +1,5 @@
 import tensorflow as tf
-from agnet1.main1 import Main1
+from agent1.main1 import Main1
 from agent2.main2 import Main2
 from tool import Tools
 from environment import Env

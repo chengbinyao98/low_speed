@@ -9,16 +9,16 @@ class Env(object):
 
         # 帧结构
         self.frame_slot = 0.005  # 帧时隙时间长度
-        self.beam_slot = 50  # 波束选择时隙数
+        self.beam_slot = 100  # 波束选择时隙数
         self.right = 4  # 正确传输最低的SNR
 
         # 车辆和道路
         self.road_length = 200  # 道路长度
         self.straight = 100  # 基站和道路的直线距离
 
-        self.v_min = 11  # 车辆的最小速度
-        self.v_max = 13  # 车辆的最大速度
-        self.accelerate = 24  # 车辆的加速度
+        self.v_min = 3  # 车辆的最小速度
+        self.v_max = 5  # 车辆的最大速度
+        self.accelerate = 8  # 车辆的加速度
 
         # self.min_dis = 22  # 车辆之间的最小反应距离
         # 22 40
@@ -34,7 +34,7 @@ class Env(object):
 
 
         # 天线
-        self.ann_num = 112  # 天线数目
+        self.ann_num = 96  # 天线数目
 
         # 存储单元
         self.cars_posit = []  # 车辆的位置（连续）

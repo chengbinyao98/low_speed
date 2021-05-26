@@ -37,10 +37,10 @@ class DQN2(object):
 
     def restore_net(self):
         # saver = tf.train.Saver()
-        self.saver.restore(self.sess, 'data/agent2')
+        self.saver.restore(self.sess, 'agent2/data/agent2')
 
     def choose_action(self, s):
-        self.epsilon = self.epsilon * 0.98
+        self.epsilon = self.epsilon * 0.99
 
         if np.random.rand() < self.epsilon:
             return np.random.randint(self.a_dim)

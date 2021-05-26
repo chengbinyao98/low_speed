@@ -22,7 +22,7 @@ class Env2(object):
         self.max_dis = 5
 
         self.road_section = 1  # 每几米划分成一个路段
-        self.beam_section = 1  # 每几米划分成一个路段
+        self.beam_section = 0.5  # 每几米划分成一个路段
 
         self.road_range = 10  # 动作可以选择的范围
 

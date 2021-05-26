@@ -1,5 +1,5 @@
 import tensorflow as tf
-from agnet1.main1 import Main1
+from agent1.main1 import Main1
 from agent2.main2 import Main2
 from tool import Tools
 from environment import Env
@@ -76,7 +76,7 @@ if __name__ == '__main__':
             for x in dic_state:
                 for num in range(len(dic_state[x])):
                     for dim in range(len(dic_state[x][num])):
-                        draw_action[dic_state[x][num][dim][3]] = dic_action[x][num][dim]
+                        draw_action[dic_state[x][num][dim][2]] = dic_action[x][num][dim]
             draw.piant(env.cars_posit,env.road_range,ax1,env.frame_slot,draw_action)
 
             dic_state_, dic_reward = env.step(dic_action, tools)

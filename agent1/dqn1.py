@@ -35,7 +35,7 @@ class DQN1(object):
 
     def restore_net(self):
         # saver = tf.train.Saver()
-        self.saver.restore(self.sess, 'data/agent1')
+        self.saver.restore(self.sess, 'agent1/data/agent1')
 
     def choose_action(self, s):
         self.epsilon = self.epsilon * 0.98
