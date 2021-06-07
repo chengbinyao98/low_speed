@@ -14,9 +14,9 @@ class Env2(object):
         self.road_length = 200  # 道路长度
         self.straight = 100  # 基站和道路的直线距离
 
-        self.v_min = 3  # 车辆的最小速度
-        self.v_max = 5  # 车辆的最大速度
-        self.accelerate = 8  # 车辆的加速度
+        self.v_min = 7  # 车辆的最小速度
+        self.v_max = 9  # 车辆的最大速度
+        self.accelerate = 16  # 车辆的加速度
         #22 28
         self.min_dis = 3  # 车辆之间的最小反应距离
         self.max_dis = 5
